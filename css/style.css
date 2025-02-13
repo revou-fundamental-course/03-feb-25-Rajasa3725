@@ -1,0 +1,52 @@
+/* ini file css */
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+    border: 2px solid black;
+    
+}
+
+main {
+    background-color: rgb(69, 210, 210);
+}
+
+.form-konversi {
+    display: flex;
+    flex-direction: row;
+}
+
+.style-form {
+    border: 1px solid black;
+    height: 50px;
+    width: 100%;
+}
+
+/* ini style buat 9/5 pada <p> penjelasan rumus konversi */
+span.frac {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    font-family: math;
+}
+span.frac > sup, span.frac > sub {
+    display: block;
+    font: inherit;
+    padding: 0 0.3em;
+}
+span.frac > sup {border-bottom: 0.08em solid;}
+span.frac > span {display:none ;}
+
+/* ini style untuk S yang mewakili Suhu */
+.remark {
+    font-family: math;
+    font-size: larger;
+    padding: 0 0.3em 0 0.1em;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+}

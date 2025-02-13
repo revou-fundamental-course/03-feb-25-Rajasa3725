@@ -8,14 +8,76 @@
 
     <!-- ini link css -->
     <link rel="stylesheet" href="css/style.css">
-</head>
+
+    <!-- ini link java -->
+     <script defer src="js/script.js"></script>
 
 <body>
     <header>
-        <h1>Konversi Celcius ke Farenheit</h1>
+        <h1>Konversi suhu</h1>
     </header>
 
     <main>
+        <!-- introduction -->
+        <section>
+            <p>Silahkan masukan besar suhu <b>celcius (&deg;C)</b>
+                untuk mengonversi keadalam Farenheit (&deg;F) 
+                atau sebaliknya.</p>
+        </section>
+
+         
+        <section class="form-konversi">
+         <!-- Form Input Konversi Suhu (Left side)-->   
+            <form>
+                <div>
+                    <label>Celcius (&deg;C)</label></br>
+                    <input type="number" placeholder="Masukan Nilai Suhu" class="style-form">
+                </div>
+            </form>
+        
+         
+         <!-- Form Hasil Konversi Suhu (Right side)-->
+            <form>
+                <div>   
+                    <label>Farenheit (&deg;F)</label></br>
+                    <input type="text" class="style-form">
+                </div>
+            </form>
+        </section> 
+
+        <!-- Button -->
+        <div class="button-group">
+            <button>Konversi</button>
+            <button>Reset</button>
+            <button>Reverse</button>
+        </div>
+
+        <!-- form hasil konversi menggunakan rumus -->
+        <section>
+            <div>
+                <label>Cara Konversi Suhu</label></br>
+                <input type="text" readonly class="style-form">
+            </div>
+        </section>
+
+        <!-- disini ada link reverse farenheit ke celcius -->
+
+        <!-- penjelasan rumus koversi suhu -->
+        <section>
+            <h3>Cara Konversi Suhu Celcius (&deg;C) ke Farenheit (&deg;F)</h3>
+            <hr> <!-- ini garis-->
+
+            <p> Suhu (<span class="remark">S</span>) dalam farenheit (&deg;F) sama dengan 
+                suhu dalam celcius (&deg;C) dikali 
+                <span class="frac"><sup>9</sup><span>&deg;</span><sub>5</sub></span> <!--ini teks 9/5-->
+                ditambah 32</p>
+            
+            <p>Rumusnya sebagai berikut :</p>
+            <!-- rumus konversi suhu farenheit -->
+            <p><span class="remark">S</span><sub>(&deg;F)</sub> = 
+                (<span class="remark">S</span><sub>(&deg;C)</sub> x 
+                <span class="frac"><sup>9</sup><span>&deg;</span><sub>5</sub></span>) + 32 </p>
+        </section> 
 
     </main>
 
