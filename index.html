@@ -9,8 +9,6 @@
     <!-- ini link css -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- ini link java -->
-     <script defer src="js/script.js"></script>
 
 <body>
     <header>
@@ -28,35 +26,32 @@
          
         <section class="form-konversi">
          <!-- Form Input Konversi Suhu (Left side)-->   
-            <form>
+          
                 <div>
-                    <label>Celcius (&deg;C)</label></br>
-                    <input type="number" placeholder="Masukan Nilai Suhu" class="style-form">
+                    <label id="input">Celcius (&deg;C)</label></br>
+                    <input type="number" placeholder="Masukan Nilai Suhu" class="style-form"  id="inputsuhu">
                 </div>
-            </form>
+    
         
-         
+         <!-- Button -->            
+         <div class="button-group">
+            <button id="button-konversi" onclick="konversi()">Konversi</button>
+            <button id="button-reset" onclick="reset()">Reset</button>
+            <button id="button-reverse" onclick="reverse()">Reverse</button>
+         </div> 
+
          <!-- Form Hasil Konversi Suhu (Right side)-->
-            <form>
-                <div>   
-                    <label>Farenheit (&deg;F)</label></br>
-                    <input type="text" class="style-form">
-                </div>
+            <form>   
+                    <label id="output">Farenheit (&deg;F)</label></br>
+                    <input type="text" class="style-form" id="hasilinputsuhu" readonly>
             </form>
         </section> 
-
-        <!-- Button -->
-        <div class="button-group">
-            <button>Konversi</button>
-            <button>Reset</button>
-            <button>Reverse</button>
-        </div>
 
         <!-- form hasil konversi menggunakan rumus -->
         <section>
             <div>
-                <label>Cara Konversi Suhu</label></br>
-                <input type="text" readonly class="style-form">
+                <label for="cara-hasil-input-suhu">Cara Konversi Suhu</label></br>
+                <input type="text" readonly class="style-form" id="carahasilinputsuhu">
             </div>
         </section>
 
@@ -82,6 +77,8 @@
     </main>
 
     <footer>made by rajasa</footer>
+
+    <script src="js/script.js"></script>
     
 </body>
 

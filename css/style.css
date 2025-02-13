@@ -1,21 +1,37 @@
 /* ini file css */
 
 body {
-    display: flex;
-    flex-direction: column;
     font-family: 'Times New Roman', Times, serif;
     padding: 20px;
     border: 2px solid black;
-    
+    max-width: 760px;
+    justify-self: center;
 }
 
 main {
     background-color: rgb(69, 210, 210);
+    max-width: 750px;
+    justify-self: center;
+    align-items: center;
 }
 
-.form-konversi {
-    display: flex;
-    flex-direction: row;
+header {
+    text-align: center;
+}
+
+section {
+    padding: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
 }
 
 .style-form {
@@ -23,6 +39,34 @@ main {
     height: 50px;
     width: 100%;
 }
+
+.button-group {
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+}
+
+button {
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+#button-konversi {
+    background-color: #06740f;
+    color: #ffffff;
+}
+
+#button-reset {
+    background-color: #ea4141;
+    color: #ffffff;
+}
+
+#button-reverse {
+    background-color: #424d43;
+    color: #ffffff;
+}
+
 
 /* ini style buat 9/5 pada <p> penjelasan rumus konversi */
 span.frac {
@@ -49,4 +93,6 @@ span.frac > span {display:none ;}
 
 footer {
     text-align: center;
+    padding: 16px;
+    background-color:rgb(76, 228, 228);
 }
